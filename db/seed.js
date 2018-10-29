@@ -62,3 +62,42 @@ const Aventurine = new Pebble({
     powers: [Revitalize, Luck]
 })
 
+const Charoite = new Pebble({
+    img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi29YiQs6zeAhUhTd8KHYUlCDEQjRx6BAgBEAU&url=http%3A%2F%2Fwww.lightworker.co.za%2FInformation%2FCrystals%2Fmobile%2F&psig=AOvVaw32Y_vqNIK_vVUJ944DS_uI&ust=1540928203644062`,
+    name: `Charoite`,
+    color: `Purple`,
+    description: `Charoite helps the wearer have a wider perspective on life, seeing the day to day events within a larger pattern of the Universe unfolding. This leads to a sense of peace and the wisdom to discern the best use of one’s energy. It also means becoming aware of synchronicities which allow your life to have a sense of flow and magic.`,
+    powers: [Clarity, Grounding]
+})
+
+const Malachite = new Pebble({
+    img: `https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjW5fqhtazeAhWNvlMKHQ9fAlkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pngarts.com%2Fexplore%2F32527&psig=AOvVaw1hlq2JMFtgkEDUZpztlbrm&ust=1540928763382578`,
+    name: `Malachite`,
+    color: `Green`,
+    description: `Malachite is a stalwart protector and bolsterer of your strength and willpower. It helps you access your innate power and protects you from negativity as you take action in the world. Malachite is a classic protection stone. It can help you stay alert and avoid danger, as well as strengthen your boundaries so you are not affected by negative energies.`,
+    powers: [Strength, Will]
+})
+
+const Spinel = new Pebble({
+    img: `https://www.google.com/imgres?imgurl=http%3A%2F%2Fgemkids.gia.edu%2Fimages%2FMF_-_Spinel_Hero_68460_886977_450x450.png&imgrefurl=http%3A%2F%2Fgemkids.gia.edu%2Fgem%2Fspinel&docid=laLJ5Q69mXzKhM&tbnid=KZeQjMBCqaHR-M%3A&vet=10ahUKEwi_zN2IvKzeAhUrm-AKHQM4Dr8QMwhFKAUwBQ..i&w=450&h=450&bih=746&biw=1420&q=spinel%20png&ved=0ahUKEwi_zN2IvKzeAhUrm-AKHQM4Dr8QMwhFKAUwBQ&iact=mrc&uact=8`,
+    name: `Spinel`,
+    color: `Pink`,
+    description: `Spinel is a stone of hope, revitalization, and feeling the joy of being alive. It comes in a wide range of colors, which means it can be used to revitalize every chakra. Spinel is perfect to to reach for when you’re feeling a lack of energy or enthusiasm, or finding it hard to pull out of negative thoughts. Spinel helps bring fresh energy to your mind, body, heart and spirit.`,
+    powers: [Harmony, Focus]
+})
+
+const Labradorite = new Pebble({
+    img: `https://www.google.com/imgres?imgurl=http%3A%2F%2Fmoonstone.za.com%2Fwp-content%2Fuploads%2F2014%2F03%2FLabradorite.png&imgrefurl=http%3A%2F%2Fmoonstone.za.com%2Fabout%2Fmetaphysical-properties%2Flabradorite%2F&docid=RIWHMAvwyn4DOM&tbnid=hdnlnJ0aEj_uYM%3A&vet=10ahUKEwizwZOFvqzeAhWvmOAKHb4UCs8QMwhJKAwwDA..i&w=261&h=261&bih=746&biw=1420&q=labradorite%20png&ved=0ahUKEwizwZOFvqzeAhWvmOAKHb4UCs8QMwhJKAwwDA&iact=mrc&uact=8`,
+    name: `Labradorite`,
+    color: `Metallic blue, green, gold, and purple`,
+    description: `Labradorite facilitates awareness of multiple layers of reality at the same time; thus it is a good stone for shamanic work and those working with the Akashic records. Labradorite is a protective crystal for doing this work, keeping your aura strong and blocking intruders. It can also help you remember your experiences while journeying in other realms, or recall past life memories.`,
+    powers: [Strength, Psychokinesis]
+})
+
+const Moonstone = new Pebble({
+    img: `https://www.google.com/imgres?imgurl=https%3A%2F%2Fbanner2.kisspng.com%2F20180630%2Fqsr%2Fkisspng-gemstone-white-opal-zircon-moonstone-5b38038d0a0240.801602511530397581041.jpg&imgrefurl=https%3A%2F%2Fwww.kisspng.com%2Fpng-gemstone-white-opal-zircon-moonstone-4539246%2F&docid=Ok_LdkvWbU3WoM&tbnid=BvH_EXADqUIhoM%3A&vet=10ahUKEwjwz7KLwKzeAhWimuAKHSiGAzcQMwhIKAowCg..i&w=900&h=780&bih=746&biw=1420&q=moonstone%20png&ved=0ahUKEwjwz7KLwKzeAhWimuAKHSiGAzcQMwhIKAowCg&iact=mrc&uact=8`,
+    name: `Moonstone`,
+    color: `Translucent`,
+    description: `Moonstone corresponds with the High Priestess card. It can stimulate right-brain thinking, which is non-linear and makes leaps of insight rather than step-by-step analysis. If you want to get in touch with your femininity (whether male or female) and integrate your unconscious, carry moonstone in your pocket or wear moonstone jewelry.`,
+    powers: [Revitalize, Harmony, Clarity]
+})
