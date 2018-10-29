@@ -101,3 +101,40 @@ const Moonstone = new Pebble({
     description: `Moonstone corresponds with the High Priestess card. It can stimulate right-brain thinking, which is non-linear and makes leaps of insight rather than step-by-step analysis. If you want to get in touch with your femininity (whether male or female) and integrate your unconscious, carry moonstone in your pocket or wear moonstone jewelry.`,
     powers: [Revitalize, Harmony, Clarity]
 })
+
+const Larimar = new Pebble({
+    img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj5jNLwwazeAhWhTd8KHfueCyEQjRx6BAgBEAU&url=https%3A%2F%2Fwww.rubylane.com%2Fitem%2F671407-VSRingLarimarSz9x2e25%2FLarimar-Blue-Ring-Sterling-Silver-Vintage&psig=AOvVaw1gfXHfMUdYI148QqKnsZwC&ust=1540932186949415`,
+    name: `Larimar`,
+    color: `Pale Blue`,
+    description: `Larimar empowers you to speak directly from the heart. It is one of the best stones for diffusing anger and transmuting it to relaxed, clear communication. It helps you tap into a deep sense of calm that transcends the current situation and your emotional responses to it–helping you to accept what is, and see the Divine in every moment.`,
+    powers: [Communication, Focus, Clarity]
+})
+
+const Morganite = new Pebble({
+    img: `https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.tivonjewels.com%2Fassets%2Fcomponents%2Fphpthumbof%2Fcache%2Fmorganite.40c38c343d9d4cfdcec236d14155473f.png&imgrefurl=https%3A%2F%2Fwww.tivonjewels.com%2Fgems%2Fcatalogue%2Fmorganite&docid=fTKFNZDM3Ma1DM&tbnid=cZ1Aj3qCCkFA0M%3A&vet=10ahUKEwiduJPxwqzeAhXilOAKHejZBDMQMwhDKAMwAw..i&w=340&h=340&bih=746&biw=1420&q=morganite%20png&ved=0ahUKEwiduJPxwqzeAhXilOAKHejZBDMQMwhDKAMwAw&iact=mrc&uact=8`,
+    name: `Morganite`,
+    color: `Peach`,
+    description: `Morganite is a heart chakra stone and carries the energy of Divine love and compassion. It is an excellent stone to work with emotional trauma. It helps you come to terms with past pain and see the meaning and purpose of it in the larger path of your life. This helps you to release the heartache and learn the lessons it was meant to show you. If you are ready to transform pain and trauma into wisdom and compassion, this is your stone.`,
+    powers: [Clarity, Grounding, Focus]
+})
+
+const Serpentine = new Pebble({
+    img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiO97-UxKzeAhVtS98KHRgWDmwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.rockonmineralsanddesign.com%2Fsecurity%2F&psig=AOvVaw05k0nqQJPYaK8uByraIDmQ&ust=1540932799021167`,
+    name: `Serpentine`,
+    color: `Pale Yellowish - Green to Green`,
+    description: `Serpentine is associated with the energy of the serpent, or snake. It’s an earth oriented crystal that connects with the resonance and vibration of the natural world, helping you embody your true nature. The serpent’s energy is one of transformation and rebirth, as it releases its old skin and embodies a new version of itself again and again.`,
+    powers: [Grounding, Revitalize, Will]
+})
+
+
+//  ===== USERS: #3 =====
+const Raquel = new User({
+    username: `Raq-Mama 56`,
+    img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiQnNfBx6zeAhWsm-AKHblgCrwQjRx6BAgBEAU&url=http%3A%2F%2Fwww.entertainmentgh.com%2Frelationship%2Fpurposefully-scared-learn-simple-ways-trust-abusive-relationship%2Fattachment%2Fhappy-black-woman%2F&psig=AOvVaw1USjr4Y0_BO4YvjrQlg8Ua&ust=1540933684652596`,
+    rocks: [Larimar, Spinel, Charoite, Labradorite]
+})
+
+const Susan = new User({
+    username: `Susy-QT`,
+    img: ``
+})
