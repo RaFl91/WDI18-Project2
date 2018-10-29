@@ -6,7 +6,7 @@ const Pebble = new Schema({
     name: String,
     color: String,
     description: String,
-    power: [{
+    powers: [{
         type: Schema.Types.ObjectId,
         ref: 'Power'
     }]
