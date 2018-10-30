@@ -1,3 +1,7 @@
+// Heroku db
+const mongoose = require('mongoose')
+mongoose.connect(process.env.MONGODB_URI)
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
