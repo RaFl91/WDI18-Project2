@@ -8,6 +8,12 @@ const powersController = {
     index: (req, res) => {
         // res.send("Hey whats up this is app index")
         res.render('app/index')
+    },
+    new: (req, res) => {
+        res.send(`This is user new page`)
+    },
+    show: (req, res) => {
+        res.send(`This is user show page`)
     }
 }
 
