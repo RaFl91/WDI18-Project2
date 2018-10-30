@@ -131,10 +131,30 @@ const Serpentine = new Pebble({
 const Raquel = new User({
     username: `Raq-Mama 56`,
     img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiQnNfBx6zeAhWsm-AKHblgCrwQjRx6BAgBEAU&url=http%3A%2F%2Fwww.entertainmentgh.com%2Frelationship%2Fpurposefully-scared-learn-simple-ways-trust-abusive-relationship%2Fattachment%2Fhappy-black-woman%2F&psig=AOvVaw1USjr4Y0_BO4YvjrQlg8Ua&ust=1540933684652596`,
-    rocks: [Larimar, Spinel, Charoite, Labradorite]
+    rocks: [Larimar, Spinel, Charoite, Labradorite],
+    description: `Keeping my mind clear and focusing on me!`
 })
 
-const Susan = new User({
-    username: `Susy-QT`,
-    img: ``
+const Chad = new User({
+    username: `|  Chad  |`,
+    img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiLna3-9azeAhVLhuAKHYYwDZgQjRx6BAgBEAU&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_91987068_absolute-peace-nice-handsome-peaceful-man-holding-his-head-and-closing-his-eyes-while-feeling-harmon.html&psig=AOvVaw1bVGF81_Mz9EY-14mjYM3p&ust=1540934972400831`,
+    rocks: [Agate, Moonstone, Malachite],
+    description: `Nothin beats a chill day like my pebbles, lightin up a mellow incense, and catchin some meditation!
+    #inthezone`
 })
+
+const Doggo = new User({
+    username: `g0oD-B0183`,
+    img: `https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjSusOP-KzeAhVvneAKHWCyBQoQjRx6BAgBEAU&url=http%3A%2F%2Fwww.sanmiguelicons.com%2Fagnostic-faith%2Fpeaceful-dog%2F&psig=AOvVaw3gtewEP4P_A5gzhxjQboUB&ust=1540946745705217`,
+    rocks: [Aventurine, Serpentine, Morganite],
+    description: `Bork! Bork bork bork bork! Bork bork bork bork bork bork bork bork bork!`
+})
+
+User.remove({})
+    .then(() => Power.insertMany([Harmony, Strength, Clarity, Psychokinesis, Communication, Grounding, Revitalize, Focus, Will, Luck]))
+    .then(() => Pebble.insertMany([Agate, Aventurine, Charoite, Malachite, Spinel, Labradorite, Moonstone, Larimar, Morganite, Serpentine]))
+    .then(() => Raquel.save())
+    .then(() => Chad.save())
+    .then(() => Doggo.save())
+    .then(() => console.log(`Database seeding success`))
+    .then(() => mongoose.connection.close())
