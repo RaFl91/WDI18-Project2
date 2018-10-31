@@ -8,6 +8,7 @@ const Pebble = new Schema({
     description: String,
     powers: [{
         type: Schema.Types.ObjectId,
+        // Still unsure of how to change object Id's to names
         ref: 'Power'
     }]
 })
