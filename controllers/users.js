@@ -5,15 +5,15 @@ const Power = require('../models/Power')
 
 
 const usersController = {
-    index: (req, res) => {
-        // res.send("Hey whats up this is app index")
-        // res.render('app/index')
+    index: (req, res) => { 
         User.find({}).populate('pebbles')
             .then((users) => {
+                console.log(users)
                 res.render('users/index', {
                     users: users
                 })
             })
+       
     },
     new: (req, res) => {
         res.send(`This is user new page`)
@@ -26,15 +26,15 @@ const usersController = {
         })
     },
     create: (req, res) => {
-        User.create({
-            username: req.body.username,
-            img: req.body.img,
-            rock: req.body.rock,
-            description: req.body.description
-        })
-        .then(() => {
-            res.redirect('users/index')
-        })
+        // User.create({
+        //     username: req.body.username,
+        //     img: req.body.img,
+        //     rock: req.body.rock,
+        //     description: req.body.description
+        // })
+        // .then(() => {
+        //     res.redirect('users/index')
+        // })
     }
 }
 
