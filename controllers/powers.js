@@ -26,6 +26,12 @@ const powersController = {
                     power: power
                 })
             })
+    },
+    delete: (req, res) => {
+        Power.destroy(req.param.id)
+        .then(() => {
+            res.redirect('powers/index')
+        })
     }
 }
 

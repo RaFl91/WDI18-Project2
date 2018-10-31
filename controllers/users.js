@@ -27,15 +27,21 @@ const usersController = {
         })
     },
     create: (req, res) => {
-        // User.create({
-        //     username: req.body.username,
-        //     img: req.body.img,
-        //     rock: req.body.rock,
-        //     description: req.body.description
-        // })
-        // .then(() => {
-        //     res.redirect('users/index')
-        // })
+        User.create({
+            username: req.body.username,
+            img: req.body.img,
+            rock: req.body.rock,
+            description: req.body.description
+        })
+        .then(() => {
+            res.redirect('users/index')
+        })
+    },
+    delete: (req, res) => {
+        User.destroy(req.param.id)
+        .then(() => {
+            res.redirect('users/index')
+        })
     }
 }
 

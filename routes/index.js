@@ -13,6 +13,7 @@ router.get('/users', usersController.index)
 router.get('/users/new', usersController.new)
 router.get('/users/:usersId', usersController.show)
 router.post('/user', usersController.create)
+router.delete(`/users/:usersId`, pebblesController.delete)
 
 //  ===== PEBBLE ROUTES ===== // 
 router.get(`/users/:usersId/pebbles`, pebblesController.index)
