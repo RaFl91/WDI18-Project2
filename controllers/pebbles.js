@@ -37,6 +37,23 @@ const pebblesController = {
         .then(() => {
             res.redirect('pebbles/index')
         })
+    },
+    delete: (req, res) => {
+        Pebble.destroy(req.params.id)
+        .then(() => {
+            res.redirect('pebbles/index')
+        })
+    },
+    update: (req, res) => {
+        Todo.update({
+            img: req.body.img,
+            name: req.body.name,
+            color: req.body.color,
+            description: req.body.description,
+            powers: req.body.powers
+          }, req.params.id).then(() => {
+            res.redirect('pebbles/index');
+          })
     }
 }
 
