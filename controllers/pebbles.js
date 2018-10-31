@@ -39,7 +39,7 @@ const pebblesController = {
         })
     },
     delete: (req, res) => {
-        Pebble.destroy(req.params.id)
+        Pebble.destroy(req.param.id)
         .then(() => {
             res.redirect('pebbles/index')
         })

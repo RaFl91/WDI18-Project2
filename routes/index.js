@@ -19,7 +19,7 @@ router.get(`/users/:usersId/pebbles`, pebblesController.index)
 router.get(`/users/:usersId/pebbles/new`, pebblesController.new)
 router.get(`/users/:usersId/pebbles/:pebblesId`, pebblesController.show)
 router.post(`/users/:usersId/pebbles`, pebblesController.create)
-router.delete(`/users/:usersId/pebbles/:pebblesId`, pebblesController.destroy)
+router.delete(`/users/:usersId/pebbles/:pebblesId`, pebblesController.delete)
 router.patch(`/users/:usersId/pebbles/:pebblesId`, pebblesController.update)
 router.put(`/users/:usersId/pebbles/:pebblesId`, pebblesController.update)
 
