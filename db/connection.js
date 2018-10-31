@@ -1,6 +1,7 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 
+// was at first connected to Heroku db: not working the way I wanted to
 mongoose.connect(process.env.MONGODB_URI).then(() => {
     console.log('Connected to MongoDB')
 }).catch((err) => {
