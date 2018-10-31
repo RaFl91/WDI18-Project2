@@ -20,9 +20,10 @@ const usersController = {
     },
     show: (req, res) => {
         // res.send(`This is user show page`)
+        const userId = req.params.id
         User.findById(userId).populate('pebbles')
         .then((user) => {
-            res.render('user/show', {user: user})
+            res.render('users/show', {user: user})
         })
     },
     create: (req, res) => {
