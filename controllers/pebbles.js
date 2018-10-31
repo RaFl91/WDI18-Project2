@@ -6,8 +6,8 @@ const Power = require('../models/Power')
 const pebblesController = {
     index: (req, res) => {
         // res.send("Hey whats up this is app index")
-        res.render('app/index')
-        Pebble.find().populate('powers')
+        // res.render('app/index')
+        Pebble.find({}).populate('powers')
             .then((pebbles) => {
                 res.render('pebbles/index', {
                     pebbles: pebbles

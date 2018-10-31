@@ -7,13 +7,25 @@ const Power = require('../models/Power')
 const powersController = {
     index: (req, res) => {
         // res.send("Hey whats up this is app index")
-        res.render('app/index')
+        // res.render('app/index')
+        Power.find({})
+            .then((powers) => {
+                res.render('powers/index', {
+                    powers: powers
+                })
+            })
     },
     new: (req, res) => {
         res.send(`This is user new page`)
     },
     show: (req, res) => {
-        res.send(`This is user show page`)
+        // res.send(`This is user show page`)
+        Power.findById(powerId)
+            .then((power) => {
+                res.render('power/show', {
+                    power: power
+                })
+            })
     }
 }
 

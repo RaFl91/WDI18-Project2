@@ -8,7 +8,7 @@ const usersController = {
     index: (req, res) => {
         // res.send("Hey whats up this is app index")
         // res.render('app/index')
-        User.find().populate('pebbles')
+        User.find({}).populate('pebbles')
             .then((users) => {
                 res.render('users/index', {
                     users: users
