@@ -25,6 +25,18 @@ const pebblesController = {
                     pebble: pebble
                 })
             })
+    },
+    create: (req, res) => {
+        User.create({
+            img: req.body.img,
+            name: req.body.name,
+            color: req.body.color,
+            description: req.body.description,
+            powers: req.body.powers
+        })
+        .then(() => {
+            res.redirect('pebbles/index')
+        })
     }
 }
 

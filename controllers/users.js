@@ -24,6 +24,17 @@ const usersController = {
         .then((user) => {
             res.render('user/show', {user: user})
         })
+    },
+    create: (req, res) => {
+        User.create({
+            username: req.body.username,
+            img: req.body.img,
+            rock: req.body.rock,
+            description: req.body.description
+        })
+        .then(() => {
+            res.redirect('users/index')
+        })
     }
 }
 
